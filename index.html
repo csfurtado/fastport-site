@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fastport – Scanner for noobs</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo">
+      <img src="assets/index/images/fastport.png" alt="Fastport Logo" />
+      <h2>FASTPORT</h2>
+    </div>
+    <nav>
+      <a href="report.html">Report</a>
+      <label class="theme-switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider"></span>
+      </label>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>YOUR TRUSTED SCANNER</h1>
+    <p>Built for speed. Designed for beginners.</p>
+    <button onclick="window.location.href='https://github.com/csfurtado/fastport-project'">Try Fastport – Beta</button>
+  </section>
+
+  <section class="features">
+    <div class="features-group">
+      <h2>Finish Reconnaissance Before Everyone Else</h2>
+      <p>Fastport gives you the edge. Scan first. Act faster.</p>
+      <hr/>
+      <div class="feature-list">
+        <div class="feature">
+          <img src="assets/index/images/thunder.png" alt="Fast icon" />
+          <h3>Fast</h3>
+          <p>Launch scans in seconds. Fastport is built for speed, outperforming traditional tools like Nmap.</p>
+        </div>
+        <div class="feature">
+          <img src="assets/index/images/target.png" alt="Accurate icon" />
+          <h3>Accurate</h3>
+          <p>Get reliable results with minimal noise. Fastport delivers precision you can trust.</p>
+        </div>
+        <div class="feature">
+          <img src="assets/index/images/view.png" alt="Intuitive icon" />
+          <h3>Intuitive</h3>
+          <p>Designed for beginners. Visual dashboards, smart summaries, and a clean interface make scanning simple.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="community-box">
+    <div class="community-content">
+      <div class="feedback-form">
+        <div class="beta-header">
+          <h2>Version Beta</h2>
+          <img src="assets/index/images/beta.png" alt="Beta badge" />
+        </div>
+        <p>Fastport is currently in <strong>beta</strong>. Spotted a bug or have an idea?<br>Your input is always welcomed.</p>
+        <form id="feedback-form">
+          <input type="text" id="name" placeholder="Your name" required />
+          <input type="url" id="link" placeholder="LinkedIn or GitHub URL" />
+          <textarea id="comment" placeholder="Your comment" rows="4" required></textarea>
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </div>
+      <div class="testimonials">
+        <h3>What users are saying</h3>
+        <div id="testimonial-list">
+          <p>No feedback yet. <strong>Be the first to share your thoughts!</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Fastport. All rights reserved. |
+    <a href="https://github.com/csfurtado">GitHub</a> |
+    <a href="https://www.linkedin.com/in/csfurtado/">Contact</a>
+  </footer>
+
+  <script src="js/global.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

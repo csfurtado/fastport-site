@@ -1,0 +1,25 @@
+.hero {
+  text-align: center;
+  padding: 6rem 2rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #00cfff;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.report-content {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.report-content p {
+  margin-bottom: 1rem;
+  color: #ccc;
+}

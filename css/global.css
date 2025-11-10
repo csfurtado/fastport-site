@@ -1,0 +1,172 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(to bottom right, #0a0f1c, #000000);
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* opcional para responsividade */
+  padding: 2rem;
+  background-color: #0a0f1c;
+}
+
+.main-header h2,
+.main-header nav a {
+  color: #00cfff;
+}
+
+header, footer {
+  background-color: #0a0f1c;
+  padding: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  width: 48px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00cfff;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+footer a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #00bfff;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "🌙";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 26px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #0077cc;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+  content: "☀️";
+  background-color: #fff;
+  color: #000;
+}
+
+/* Light mode */
+
+body.light-mode {
+  background: #f9f9f9;
+  color: #222;
+}
+
+body.light-mode header{
+  background-color: #eaeaea;
+}
+
+body.light-mode footer {
+  color: #ccc;
+}
+
+body.light-mode nav a {
+  color: #333;
+}
+
+body.light-mode nav a:hover {
+  color: #00cfff;
+}
+
+body.light-mode .slider {
+  background-color: #00cfff;
+}
+
+body.light-mode input:checked + .slider {
+  background-color: #00cfff;
+}
+
+body.light-mode p,
+body.light-mode li,
+body.light-mode span,
+body.light-mode div,
+body.light-mode td,
+body.light-mode th {
+  color: #444 !important;
+}
+
+body.light-mode button {
+  background-color: #00cfff;
+  color: #fff !important;
+}
+
+body.light-mode button:hover {
+  background-color: #0099cc;
+}
