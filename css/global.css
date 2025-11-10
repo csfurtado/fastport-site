@@ -170,3 +170,61 @@ body.light-mode button {
 body.light-mode button:hover {
   background-color: #0099cc;
 }
+
+/* Melhorias para layout mobile */
+
+@media (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0rem  2.5rem;
+    text-align: center;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .main-header h2 {
+    font-size: 1.6rem;
+    margin: 0;
+    color: #00cfff;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    background-color: #00cfff;
+    color: white!important;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: #005fa3;
+  }
+
+  .theme-switch {
+    transform: scale(0.9);
+  }
+}
+
+
