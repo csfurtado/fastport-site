@@ -1,8 +1,11 @@
 html, body {
   height: 100%;
   margin: 0;
-  background-color: #000; /* fundo escuro consistente */
-  color: #ccc; /* texto claro */
+  padding: 0;
+  background-color: #000;
+  color: #ccc;
+  font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 .page-wrapper {
@@ -15,14 +18,16 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 3rem 2rem;
   text-align: center;
+  box-sizing: border-box;
 }
 
 /* Hero section */
 .hero {
+  width: 100%;
+  max-width: 700px;
   margin-bottom: 2rem;
 }
 
@@ -35,12 +40,15 @@ main {
 .hero p {
   font-size: 1.2rem;
   color: #ccc;
+  margin: 0;
 }
 
 /* Report content */
 .report-content {
+  width: 100%;
   max-width: 700px;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 0;
+  box-sizing: border-box;
 }
 
 .report-content p {
@@ -56,4 +64,29 @@ footer {
   font-size: 0.9rem;
   color: #ccc;
   background-color: #0a0f1c;
+  box-sizing: border-box;
+  border-top: none;
+}
+
+/* 📱 Mobile ajustes */
+@media (max-width: 600px) {
+  main {
+    padding: 2rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .report-content p {
+    font-size: 0.95rem;
+  }
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
 }
