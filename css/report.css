@@ -1,6 +1,29 @@
-.hero {
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #000; /* fundo escuro consistente */
+  color: #ccc; /* texto claro */
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
   text-align: center;
-  padding: 6rem 2rem 2rem;
+}
+
+/* Hero section */
+.hero {
+  margin-bottom: 2rem;
 }
 
 .hero h1 {
@@ -14,12 +37,23 @@
   color: #ccc;
 }
 
+/* Report content */
 .report-content {
-  padding: 3rem 2rem;
-  text-align: center;
+  max-width: 700px;
+  padding: 2rem 1rem;
 }
 
 .report-content p {
   margin-bottom: 1rem;
   color: #ccc;
+}
+
+/* Footer fixo ao fundo */
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  background-color: #0a0f1c;
 }
